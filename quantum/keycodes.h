@@ -912,6 +912,17 @@ enum qk_keycode_defines {
     KC_LNG7    = KC_LANGUAGE_7,
     KC_LNG8    = KC_LANGUAGE_8,
     KC_LNG9    = KC_LANGUAGE_9,
+
+    KC_LANG1   = KC_LANGUAGE_1,
+    KC_LANG2   = KC_LANGUAGE_2,
+    KC_LANG3   = KC_LANGUAGE_3,
+    KC_LANG4   = KC_LANGUAGE_4,
+    KC_LANG5   = KC_LANGUAGE_5,
+    KC_LANG6   = KC_LANGUAGE_6,
+    KC_LANG7   = KC_LANGUAGE_7,
+    KC_LANG8   = KC_LANGUAGE_8,
+    KC_LANG9   = KC_LANGUAGE_9,
+
     KC_ERAS    = KC_ALTERNATE_ERASE,
     KC_SYRQ    = KC_SYSTEM_REQUEST,
     KC_CNCL    = KC_CANCEL,
@@ -1518,6 +1529,22 @@ enum qk_keycode_defines {
 #define IS_QUANTUM_KEYCODE(code) ((code) >= QK_BOOTLOADER && (code) <= QK_LAYER_LOCK)
 #define IS_KB_KEYCODE(code) ((code) >= QK_KB_0 && (code) <= QK_KB_31)
 #define IS_USER_KEYCODE(code) ((code) >= QK_USER_0 && (code) <= QK_USER_31)
+
+#define KC_BTN1 MS_BTN1
+#define KC_BTN2 MS_BTN2
+#define KC_BTN3 MS_BTN3
+#define KC_BTN4 MS_BTN4
+#define KC_BTN5 MS_BTN5
+
+#define KC_WH_U MS_WHLU
+#define KC_WH_D MS_WHLD
+#define KC_WH_L MS_WHLL
+#define KC_WH_R MS_WHLR
+
+#define KC_MS_U MS_UP
+#define KC_MS_D MS_DOWN
+#define KC_MS_L MS_LEFT
+#define KC_MS_R MS_RGHT
 
 // Switch statement Helpers
 #define INTERNAL_KEYCODE_RANGE              KC_NO ... KC_TRANSPARENT
